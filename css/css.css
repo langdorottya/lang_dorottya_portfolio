@@ -1,0 +1,159 @@
+h1 {
+	text-align: center;
+	font-family: Edwardian Script ITC;
+	font-size: 120px;
+	border: 10px black solid;
+	margin: 20px 40px 20px 40px;
+	background-color: white
+
+}
+*, *::before, *::after{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+body{
+	background-image: url("az.png");
+}
+img{
+	max-width: 500px;
+	display: block;
+	margin: 16px auto;
+	padding: 5px;
+	background-color: white;
+	border: 5px solid black;
+}
+.gomb{
+	display: inline-block;
+	font-family: Century Gothic;
+	border: 5px black solid;
+	background-color: white;
+	padding: 5px;
+	margin: 10px 10px 20px 10px;
+}
+.fejlec{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+.belso{
+	margin: 20px 10px 10px 10px;
+}
+a {
+	text-decoration-line: none;
+}
+.gomb:hover{
+	background-color: black;
+	color: white;
+	border: 5px white solid;
+	padding: 5px;
+	margin: 10px 10px 20px 10px;
+}
+.belso:hover{
+	background-color: black;
+	color: white;
+	border: 5px white solid;
+	padding: 5px;
+	margin: 20px 10px 10px 10px;
+}
+.gomb a {
+	color:black;
+}
+.gomb a:hover{
+	color:white;
+}
+.szöveg{
+	background-color: black;
+	font-family: Century Gothic;
+	border: 5px white solid;
+	color: white;
+	text-align: justify;
+	margin: 0px 40px 0px 40px;
+	padding: 10px;
+}
+.alap{
+	display: grid;
+	grid-gap: 0px;
+	grid-template-areas: 
+	". munkasz1 foto1 ."
+	". foto2 munkasz2 ."
+	". munkasz3 foto3 ."
+	". foto4 munkasz4 .";
+}
+.munkaszöveg1{
+	grid-area: munkasz1;
+}
+.foto1{
+	grid-area: foto1;
+}
+.munkaszöveg2{
+	grid-area: munkasz2;
+}
+.foto2{
+	grid-area: foto2;
+}.munkaszöveg3{
+	grid-area: munkasz3;
+}
+.foto3{
+	grid-area: foto3;
+}.munkaszöveg4{
+	grid-area: munkasz4;
+}
+.foto4{
+	grid-area: foto4;
+}
+.szöveg2{
+	background-color: black;
+	font-family: Century Gothic;
+	border: 5px white solid;
+	max-width: 500px;
+	color: white;
+	text-align: justify;
+	padding: 10px;
+	margin: 16px auto;
+}
+.munka{
+	display: grid;
+	grid-template-columns: minmax(min-content, auto) ;
+	grid-gap: 0px;
+	grid-template-areas: 
+	". kep1 kep2 kep3 ."
+	". leiras leiras leiras .";
+}
+.kep1{
+	grid-area: kep1;
+}
+.kep2{
+	grid-area: kep2;
+}
+.kep3{
+	grid-area: kep3;
+}
+.leiras{
+	grid-area: leiras;
+	background-color: black;
+	font-family: Century Gothic;
+	border: 5px white solid;
+	color: white;
+	text-align: justify;
+	padding: 10px;
+	margin: 20px 40px 20px 40px;
+}
+.kezdolap{
+	display: flex;
+	flex-direction: row;
+}
+.kezdolapkep{
+	max-width: 500px;
+	display: block;
+	padding: 5px;
+	background-color: white;
+	border: 5px solid black;
+	margin: 0px 40px 0px 0px;
+}
+.kezdolapszoveg{
+	margin: 0px 10px 0px 40px;
+}
+.elerhetosegszoveg{
+	line-height: 2.5;
+}
